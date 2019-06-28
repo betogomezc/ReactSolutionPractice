@@ -1,0 +1,97 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+.bodyContainer {
+    margin: 0 auto;
+    width: 100%;
+}
+
+ h1{
+    text-align: center;
+    color: white;
+ }
+.header{
+  background-color: #004a80;
+}
+
+.headerBar{
+  margin-top: 1%;
+  display: block;
+}
+
+.headerBarLeft{
+  float: left;
+}
+
+.headerBarRight{
+  float: right;
+}
+
+.contenedor{
+background: #e5e5e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #e5e5e5, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #e5e5e5, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btnsearch{
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  color: #004a80;
+  border-radius: 5px;
+  border: none;
+  background: #f6be28;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f2d751, #f6be28);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f2d751, #f6be28); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btnsearch:hover {
+  color: #004a80 !important;
+  background: #f6be28 !important;
+}
+
+.btnsearch:focus,.btnsearch:active {
+   outline: none !important;
+   box-shadow: none !important;
+}
+
+.btnsearch:active {
+  color: #004a80 !important;
+  background: #f2d751 !important;
+}
+
+.footer{
+  color: #999999;
+  background-color: #ffffff;
+}
