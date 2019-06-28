@@ -37,12 +37,33 @@
     width: 100%;
 }
 
+.imgLock{
+ margin-left: 5px;
+ margin-right: 10px;
+}
+
  h1{
     text-align: center;
     color: white;
  }
+
+ h2{
+    text-align: center;
+    color: #004a80;
+ }
+
+ h3{
+    text-align: left;
+    color: #004a80;
+ }
+
+ h6{
+   color: #f6bc25;
+ }
+
 .header{
   background-color: #004a80;
+
 }
 
 .headerBar{
@@ -58,6 +79,22 @@
   float: right;
 }
 
+.startText{
+    text-align: center;
+}
+
+.startText span{
+    display: inline-block;
+}
+
+.startHere{
+  color: #f6bc25;
+}
+
+.textStartHere{
+  color: white;
+}
+
 .contenedor{
 background: #e5e5e5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #e5e5e5, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -68,7 +105,8 @@ background: linear-gradient(to top, #e5e5e5, #ffffff); /* W3C, IE 10+/ Edge, Fir
   cursor: pointer;
   width: 100px;
   height: 50px;
-  color: #004a80;
+  font-weight: bold;
+  color: #004a80 !important;
   border-radius: 5px;
   border: none;
   background: #f6be28;  /* fallback for old browsers */
@@ -94,4 +132,10 @@ background: linear-gradient(to top, #e5e5e5, #ffffff); /* W3C, IE 10+/ Edge, Fir
 .footer{
   color: #999999;
   background-color: #ffffff;
+}
+
+.TyP, .TyP a{
+  font-weight: bold;
+  color: #004a80 !important;
+  text-align: center;
 }

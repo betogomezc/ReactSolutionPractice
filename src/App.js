@@ -59,17 +59,20 @@ render() {
 							<h1>
 								Search Any Email Address
 							</h1>
-							<form role="form">
-								<div className="form-group">
+                <div className="startText">
+              <span className="startHere">Start Here </span><span className="textStartHere"> - Look up the owner's name, photos and online profiles. See what you find</span>
+                </div>
 
-									<input type="email" className="form-control" id="exampleInputEmail1" placeholder="Email"/>
-								</div>
-								<button type="submit" className="btnsearch btn-primary">
+                <div>
+								<input type="email" className="form-control" id="exampleInputEmail1" placeholder="Email"/>
+								<button type="submit" className="btnsearch btn-primary" onClick= "">
 									GO!
 								</button>
-							</form>
-                <img src={lock} className="" alt="logo" />
-                <h4>Enter Any Email Address.They won't be notified</h4>
+                </div>
+
+                <div className="textLock">
+                <h6><img src={lock} className="imgLock" alt="logo" />   Enter Any Email Address.They won't be notified</h6>
+                </div>
 
             </div>
             <div className="col-md-2">
@@ -97,35 +100,37 @@ render() {
             <div className="col-md-2">
             </div>
 					</div>
+
 					<div className="row">
             <div className="col-md-2">
             </div>
+
             <div className="col-md-4">
             <div>
-            <h3>Lorem Ipsun</h3>
+            <h3>1.Lorem Ipsun</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </div>
             <div>
-            <h3>Lorem Ipsun</h3>
+            <h3>2.Lorem Ipsun</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </div>
             <div>
-            <h3>Lorem Ipsun</h3>
+            <h3>3.Lorem Ipsun</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </div>
             </div>
 
 						<div className="col-md-4">
             <div>
-            <h3>Lorem Ipsun</h3>
+            <h3>4.Lorem Ipsun</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </div>
             <div>
-            <h3>Lorem Ipsun</h3>
+            <h3>5.Lorem Ipsun</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </div>
             <div>
-            <h3>Lorem Ipsun</h3>
+            <h3>6.Lorem Ipsun</h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
             </div>
 						</div>
@@ -145,10 +150,9 @@ render() {
              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
           </p>
           </div>
-          <div className="col-md-2">
+          <div className="col-md-2 TyP">
 					<p>
-						<a className="" href="#">Terms</a>|
-            <a className="" href="#">Privacy</a>
+						<a className="" href="#">Terms</a> | <a className="" href="#">Privacy</a>
 					</p>
           </div>
           <div className="col-md-1">
