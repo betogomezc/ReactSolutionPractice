@@ -7,6 +7,12 @@ import lock from './lock.svg';
 import './App.css';
 
 import {data} from './data';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 class App extends Component {
   constructor(){
@@ -33,11 +39,11 @@ render() {
 			<div className="row">
         <div className="header col-md-12">
 
-          <div className="row">
+          <div className="row headerBar">
             <div className="col-md-2">
             </div>
 
-            <div className="headerBar col-md-8">
+            <div className="centralBar col-md-8">
             <div className="headerBarLeft">
                 <img src={logo} className="" alt="logo" />
             </div>
@@ -84,6 +90,7 @@ render() {
 			<div className="row">
 				<div className="contenedor col-md-12">
 					<div className="row">
+
             <div className="col-md-2">
             </div>
 
@@ -95,50 +102,93 @@ render() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
               </p>
+
 						</div>
 
             <div className="col-md-2">
             </div>
 					</div>
 
-					<div className="row">
+          <div className="row">
+
             <div className="col-md-2">
             </div>
 
-            <div className="col-md-4">
-            <div>
-            <h3>1.Lorem Ipsun</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+
+            <div className="col-md-8">
+            <div className="row">
+
+            <div className="col-md-6">
+              <div className="columnas">
+                <div className="circleBase">
+                  <span>1</span>
+                </div>
+                <div>
+                  <h3>Lorem ipsum</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </div>
+              <div className="columnas">
+                <div className="circleBase">
+                  <span>2</span>
+                </div>
+                <div>
+                  <h3>Lorem ipsum</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </div>
+              <div className="columnas">
+                <div className="circleBase">
+                  <span>3</span>
+                </div>
+                <div>
+                  <h3>Lorem ipsum</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                </div>
+              </div>
+
             </div>
-            <div>
-            <h3>2.Lorem Ipsun</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+            <div className="col-md-6">
+            <div className="columnas">
+              <div className="circleBase">
+                <span>4</span>
+              </div>
+              <div>
+                <h3>Lorem ipsum</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              </div>
             </div>
-            <div>
-            <h3>3.Lorem Ipsun</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+            <div className="columnas">
+              <div className="circleBase">
+                <span>5</span>
+              </div>
+              <div>
+                <h3>Lorem ipsum</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div className="columnas">
+              <div className="circleBase">
+                <span>6</span>
+              </div>
+              <div>
+                <h3>Lorem ipsum</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+
+            </div>
+
             </div>
             </div>
 
-						<div className="col-md-4">
-            <div>
-            <h3>4.Lorem Ipsun</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-            </div>
-            <div>
-            <h3>5.Lorem Ipsun</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-            </div>
-            <div>
-            <h3>6.Lorem Ipsun</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-            </div>
-						</div>
-            <div className="col-md-2">
-            </div>
-					</div>
+          <div className="col-md-2">
+          </div>
+
+          </div>
 				</div>
 			</div>
+
 			<div className="row">
 				<div className="footer col-md-12">
         <div className="row">
@@ -152,7 +202,7 @@ render() {
           </div>
           <div className="col-md-2 TyP">
 					<p>
-						<a className="" href="#">Terms</a> | <a className="" href="#">Privacy</a>
+						<a className="" href="">Terms</a> | <a className="" href="">Privacy</a>
 					</p>
           </div>
           <div className="col-md-1">

@@ -53,7 +53,6 @@
  }
 
  h3{
-    text-align: left;
     color: #004a80;
  }
 
@@ -63,13 +62,17 @@
 
 .header{
   background-color: #004a80;
-
 }
 
 .headerBar{
-  margin-top: 1%;
-  display: block;
+  margin: 1%;
+  height: 50px;
 }
+
+.headerBar img{
+  height: 30px;
+}
+
 
 .headerBarLeft{
   float: left;
@@ -128,6 +131,45 @@ background: linear-gradient(to top, #e5e5e5, #ffffff); /* W3C, IE 10+/ Edge, Fir
   color: #004a80 !important;
   background: #f2d751 !important;
 }
+
+.columnas{
+    display: flex !important;
+}
+
+
+.circleBase {
+  float: left;
+  display:inline-block;
+  width: 10%;
+  font-size:32px;
+  margin: 5%;
+}
+
+.circleBase span {
+  color: #f6bc25;
+  text-align: center;
+  font-weight: bold;
+  padding: 30%;
+  border-radius: 50%;
+  background-color: #004a80;
+}
+
+/*
+.circleBase span{
+  width: 80px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background-color: #004a80;
+  display: inline-block;
+vertical-align: middle;
+line-height: normal;
+}*/
+
+
 
 .footer{
   color: #999999;
