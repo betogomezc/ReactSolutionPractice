@@ -82,6 +82,22 @@
   float: right;
 }
 
+.centralBar{
+  margin: 2%;
+}
+
+.centralSearch{
+  margin: 2%;
+}
+
+.centralContent{
+  margin: 2%;
+}
+
+.centralFooter{
+  margin: 2%;
+}
+
 .startText{
     text-align: center;
 }
@@ -92,6 +108,7 @@
 
 .startHere{
   color: #f6bc25;
+  font-weight: bold;
 }
 
 .textStartHere{
@@ -137,19 +154,19 @@ background: linear-gradient(to top, #e5e5e5, #ffffff); /* W3C, IE 10+/ Edge, Fir
 }
 
 
-.circleBase {
-  float: left;
-  display:inline-block;
-  width: 10%;
-  font-size:32px;
-  margin: 5%;
+.circleBase{
+  margin: 10%;
 }
 
 .circleBase span {
+  font-size:32px;
   color: #f6bc25;
   text-align: center;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  padding-left: 100%;
+  padding-right: 100%;
   font-weight: bold;
-  padding: 30%;
   border-radius: 50%;
   background-color: #004a80;
 }

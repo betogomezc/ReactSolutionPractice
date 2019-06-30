@@ -8,7 +8,7 @@ class FooterBar extends Component{
       <div className="row">
         <div className="col-md-1">
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 centralFooter">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.

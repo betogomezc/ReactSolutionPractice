@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import lock from '../lock.svg';
 import {data} from '../data';
 
-class SearchAbove extends Component{
+class SearchBelow extends Component{
 
   constructor(){
     super();
@@ -20,14 +20,6 @@ class SearchAbove extends Component{
 
   handleSubmit(){
 
-    data.map((dato,i)=>{
-      if(dato.email==this.state.inputEmail){
-      return(
-        alert("yes")
-      )}else {
-      return(  alert("no"))
-      }
-    })
     }
 
   render(){
@@ -37,10 +29,10 @@ class SearchAbove extends Component{
       </div>
       <div className="col-md-8 centralSearch">
         <h1>
-          Search Any Email Address
+          Can´t Find The Right Person?
         </h1>
           <div className="startText">
-        <span className="startHere">Start Here </span><span className="textStartHere"> - Look up the owner's name, photos and online profiles. See what you find</span>
+        <span className="startHere">Try Again  </span><span className="textStartHere"> - Make a new search</span>
           </div>
 
           <div>
@@ -62,4 +54,4 @@ class SearchAbove extends Component{
   }
 }
 
-export default SearchAbove;
+export default SearchBelow;

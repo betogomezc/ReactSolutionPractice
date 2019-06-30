@@ -12,6 +12,7 @@ import FooterBar from './components/FooterBar';
 import HeaderBar from './components/HeaderBar';
 import ListNumbers from './components/ListNumbers';
 import SearchAbove from './components/SearchAbove';
+import SearchBelow from './components/SearchBelow';
 
 import {
   BrowserView,
@@ -21,46 +22,25 @@ import {
 } from "react-device-detect";
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-    data
-    }
-    this.updateInput = this.updateInput.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
 
-
-  updateInput(event){
-  this.setState({inputEmail : event.target.value})
-  }
-
-  handleSubmit(){
-
-    /*
-    data.map((dato,i)=>{
-      if(dato.email==this.state.inputEmail){
-      return(
-        alert("yes")
-      )}else {
-      return(  alert("no"))
-      }
-    })*/
-}
 
 
 render() {
+
+  /*
     const datos  = this.state.data.map((data,i) => {
       return (
         <div className='card'>
         {data.name}
         </div>
       )
-    })
+    })*/
+
   return (
     <div className="App">
     <div className="row">
     <div className="bodyContainer col-md-12">
+
 
 			<div className="row">
         <div className="header col-md-12">
@@ -70,7 +50,7 @@ render() {
 			</div>
 
 			<div className="row">
-					<ListNumbers/>
+      <ListNumbers/>
 			</div>
 
 			<div className="row">
