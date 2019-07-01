@@ -10,9 +10,8 @@ import {data} from './data';
 import InformationUser from'./components/InformationUser';
 import FooterBar from './components/FooterBar';
 import HeaderBar from './components/HeaderBar';
-import ListNumbers from './components/ListNumbers';
 import SearchAbove from './components/SearchAbove';
-import SearchBelow from './components/SearchBelow';
+
 
 import {
   BrowserView,
@@ -47,10 +46,6 @@ render() {
           <HeaderBar/>
           <SearchAbove/>
 				</div>
-			</div>
-
-			<div className="row">
-      <ListNumbers/>
 			</div>
 
 			<div className="row">
