@@ -16,8 +16,10 @@ class HeaderBar extends Component{
             <img src={logo} className="" alt="logo" />
         </div>
         <div className="headerBarRight">
-            <img src={icn_search} className="" alt="logo" />
             <img src={icn_person} className="" alt="logo" />
+        </div>
+        <div className="headerBarRight">
+            <img src={icn_search} className="" alt="logo" />
         </div>
         </div>
 

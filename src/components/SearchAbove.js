@@ -119,8 +119,8 @@ class SearchAbove extends Component{
     <div className="col-md-8 centralContent userInformation">
     <div className="row">
 
-    <div className="col-md-2">
-    <img src={icn_person} className="" alt="logo" />
+    <div className="col-md-2 iconPersonUser">
+     <img src={icn_person} className="" alt="logo" />
     </div>
 
     <div className="col-md-10">
