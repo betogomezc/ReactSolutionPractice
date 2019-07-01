@@ -68,10 +68,21 @@
 
  h2{
     text-align: center;
+    font-weight: bold;
     color: #004a80;
  }
 
  h3{
+    color: #004a80;
+ }
+
+ h4{
+    color: #004a80;
+    font-weight: bold;
+ }
+
+ h5{
+   font-weight: bold;
     color: #004a80;
  }
 
@@ -93,7 +104,13 @@
 }
 
 .searchContainer{
+  margin-top: -1%;
   margin-bottom: 2%;
+}
+
+.searchContainerAfter{
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 .headerBarLeft{
@@ -112,8 +129,32 @@
   margin: 2%;
 }
 
+.centralSearch div{
+  margin-top: 1%;
+}
+
 .centralContent{
   margin: 2%;
+  margin-bottom: inherit;
+}
+
+.textResult{
+  text-align: center;
+  font-size: normal;
+}
+
+.userInformation{
+  margin: 2%;
+  margin-top: inherit !important;
+  padding: 2%;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: -1px 3px 9px 1px rgba(158,156,158,1);
+  -moz-box-shadow: -1px 3px 9px 1px rgba(158,156,158,1);
+  box-shadow: -1px 3px 9px 1px rgba(158,156,158,1);
 }
 
 .centralFooter{

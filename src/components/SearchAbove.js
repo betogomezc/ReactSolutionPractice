@@ -7,12 +7,19 @@ import ListNumbers from './ListNumbers';
 
 class SearchAbove extends Component{
 
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
     data,
     wrong: false,
     visible: true,
+    name: '',
+    email: '',
+    address: '',
+    age:'',
+    notes:'',
+    phoneNumbers:'',
+    relatives:''
     }
     this.updateInput = this.updateInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -26,25 +33,36 @@ class SearchAbove extends Component{
   handleSubmit(){
 
     var boolfound=0;
-    var name,address,age,notes,phoneNumbers="";
+    var name,address,age,notes,email="";
     var relatives= "";
+    var phoneNumbers="";
 
     for(var i=0; i<data.length; i++){
       if(data[i].email==this.state.inputEmail){
       boolfound=1;
 
       name= data[i].name;
+      email= data[i].email;
       address= data[i].address;
       age= data[i].age;
       notes= data[i].notes;
-      const nombre= this.setState({ name: {name} });
+      this.setState({ name: name });
+      this.setState({ email: email });
+      this.setState({ address: address });
+      this.setState({ age: age });
+      this.setState({ notes: notes });
+
         for(var p=0;p<data[i].phoneNumbers.length;p++){
-          if(data[i].phoneNumbers[p].phone)
+          if(data[i].phoneNumbers[p].phone){
           phoneNumbers= phoneNumbers+data[i].phoneNumbers[p].phone ;
+          this.setState({ phoneNumbers: phoneNumbers });
+          }
         }
         for(var r=0;r<data[i].relatives.length;r++){
-          if(data[i].relatives[r].name)
+          if(data[i].relatives[r].name){
           relatives= relatives+ data[i].relatives[r].name;
+          this.setState({ relatives: relatives });
+          }
         }
       }
     }
@@ -76,7 +94,67 @@ class SearchAbove extends Component{
 
       {/*InformationUser*/}
       <div className={(this.state.visible ? 'hide':'row visible')}>
-      <InformationUser/>
+      <div className="contenedor col-md-12">
+        <div className="row">
+      <div className="col-md-2">
+      </div>
+
+      <div className="col-md-8 centralContent textResult">
+        <h2>
+          Result
+        </h2>
+        <p>
+        Look at the result below to see the details of the person you're searched for
+        </p>
+      </div>
+
+      <div className="col-md-2">
+      </div>
+      </div>
+
+      <div className="row">
+    <div className="col-md-2">
+    </div>
+
+    <div className="col-md-8 centralContent userInformation">
+    <div className="row">
+
+    <div className="col-md-2">
+    <img src={icn_person} className="" alt="logo" />
+    </div>
+
+    <div className="col-md-10">
+    <h4>{this.state.name},{this.state.age}</h4>
+    <p>{this.state.notes}</p>
+    </div>
+
+    </div>
+    <div className="row">
+    <div className="col-md-2">
+    </div>
+
+    <div className="col-md-5">
+    <h5>Address</h5>
+    <p>{this.state.address}</p>
+    <h5>Email</h5>
+    <p>{this.state.email}</p>
+    </div>
+
+    <div className="col-md-5">
+    <h5>Phone Numbers</h5>
+    <p>{this.state.phoneNumbers}</p>
+    <h5>Relatives</h5>
+    <p>{this.state.relatives}</p>
+    </div>
+
+    </div>
+    </div>
+
+    <div className="col-md-2">
+    </div>
+    </div>
+
+      </div>
       </div>
       {/**InformationUser/}
 
@@ -119,7 +197,7 @@ class SearchAbove extends Component{
 			</div>
 
       {/*SearchBelow*/}
-      <div className={(this.state.visible ? 'hide':'row visible searchContainer')}>
+      <div className={(this.state.visible ? 'hide':'row visible searchContainerAfter')}>
 
       <div className="header col-md-12">
         <div className="row">

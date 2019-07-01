@@ -19,20 +19,21 @@ class InformationUser extends Component{
     return(
       <div className="contenedor col-md-12">
         <div className="row">
-        <div className="col-md-2">
-        </div>
+          <div className="col-md-2">
+          </div>
 
-        <div className="col-md-8 centralContent">
-          <h2>
-            Result
-          </h2>
-          <p>
-          Look at the result below to see the details of the person you're searched for</p>
-        </div>
+          <div className="col-md-8 centralContent userInformation">
+            <h2>
+              Result
+            </h2>
+            <p>
+            Look at the result below to see the details of the person you're searched for
+            </p>
+          </div>
 
-        <div className="col-md-2">
+          <div className="col-md-2">
+          </div>
         </div>
-      </div>
 
         <div className="row">
 
@@ -43,11 +44,11 @@ class InformationUser extends Component{
           <div className="col-md-8">
           <div className="row">
 
-          <div className="col-md-1">
+          <div className="col-md-2">
           <img src={icn_person} className="" alt="logo" />
           </div>
 
-          <div className="col-md-5">
+          <div className="col-md-10">
           {this.state.name}
           </div>
 
