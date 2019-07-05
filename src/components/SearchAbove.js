@@ -58,12 +58,14 @@ class SearchAbove extends Component{
           this.setState({ phoneNumbers: phoneNumbers });
           }
         }
+          this.setState({ phoneNumbers: phoneNumbers });
         for(var r=0;r<data[i].relatives.length;r++){
           if(data[i].relatives[r].name){
           relatives= relatives+ data[i].relatives[r].name;
           this.setState({ relatives: relatives });
           }
         }
+          this.setState({ relatives: relatives });
       }
     }
     if(boolfound==0){
