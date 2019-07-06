@@ -25,12 +25,11 @@ class SearchAbove extends Component{
     age:'',
     notes:'',
     phoneNumbers:'',
-    relatives:''
+    relatives:'',
     }
     this.updateInput = this.updateInput.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
 
   updateInput(event){
   this.setState({inputEmail : event.target.value})
@@ -60,14 +59,13 @@ class SearchAbove extends Component{
 
         for(var p=0;p<data[i].phoneNumbers.length;p++){
           if(data[i].phoneNumbers[p].phone){
-          phoneNumbers= phoneNumbers+data[i].phoneNumbers[p].phone+" " ;
-          this.setState({ phoneNumbers: phoneNumbers });
+          phoneNumbers= phoneNumbers+"<a href=' '>"+data[i].phoneNumbers[p].phone+"</a></br>" ;
           }
         }
           this.setState({ phoneNumbers: phoneNumbers });
         for(var r=0;r<data[i].relatives.length;r++){
           if(data[i].relatives[r].name){
-          relatives= relatives+ data[i].relatives[r].name+" ";
+          relatives= relatives+ data[i].relatives[r].name+"</br>";
           this.setState({ relatives: relatives });
           }
         }
@@ -156,9 +154,9 @@ class SearchAbove extends Component{
 
     <div className="col-md-5">
     <h5>Phone Numbers</h5>
-    <p>{this.state.phoneNumbers}</p>
+    <p dangerouslySetInnerHTML={{__html: this.state.phoneNumbers}}></p>
     <h5>Relatives</h5>
-    <p>{this.state.relatives}</p>
+    <p dangerouslySetInnerHTML={{__html: this.state.relatives}}></p>
     </div>
 
     </div>

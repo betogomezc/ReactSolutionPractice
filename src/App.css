@@ -198,16 +198,16 @@ height: 50px;
 
 .circle {
    background: #004a80;
-   border-radius: 80px;
+   border-radius: 60px;
    color: #f6bc25;
-   height: 80px;
+   height: 60px;
    font-weight: bold;
-   width: 80px;
+   width: 60px;
    display: table;
    margin: 10px auto;
    text-align: center;
-   margin-right: 10px;
-   margin-left: 10px;
+   margin-right: 20px;
+   margin-left: 20px;
 }
 .circle p {
   font-size:32px;
