@@ -156,6 +156,7 @@
 background: #e5e5e5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #e5e5e5, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to top, #e5e5e5, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding-bottom: 2%;
 }
 
 .emailInput{
@@ -206,6 +207,7 @@ height: 50px;
    margin: 10px auto;
    text-align: center;
    margin-right: 10px;
+   margin-left: 10px;
 }
 .circle p {
   font-size:32px;
@@ -213,39 +215,23 @@ height: 50px;
    display: table-cell;
 }
 
-/*
-.circleBase{
-  margin: 10%;
+.circleImg {
+   background: #004a80;
+   border-radius: 80px;
+   height: 80px;
+   width: 80px;
+   display: table;
+   margin: 10px auto;
+   text-align: center;
+   margin-right: 10px;
+   margin-left: 10px;
 }
 
-
-.circleBase span {
-  font-size:32px;
-  color: #f6bc25;
-  text-align: center;
-  padding-top: 50%;
-  padding-bottom: 50%;
-  padding-left: 100%;
-  padding-right: 100%;
-  font-weight: bold;
-  border-radius: 50%;
-  background-color: #004a80;
+.circleImg img {
+   vertical-align: middle;
+   margin: inherit;
 }
-*/
-/*
-.circleBase span{
-  width: 80px;
-  color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  background-color: #004a80;
-  display: inline-block;
-vertical-align: middle;
-line-height: normal;
-}*/
+
 
 
 
@@ -258,4 +244,5 @@ line-height: normal;
   font-weight: bold;
   color: #004a80 !important;
   text-align: center;
+  margin: 2%;
 }

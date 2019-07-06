@@ -4,6 +4,12 @@ import icn_person from '../icn_person.svg';
 import {data} from '../data';
 import InformationUser from'./InformationUser';
 import ListNumbers from './ListNumbers';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 class SearchAbove extends Component{
 
@@ -54,14 +60,14 @@ class SearchAbove extends Component{
 
         for(var p=0;p<data[i].phoneNumbers.length;p++){
           if(data[i].phoneNumbers[p].phone){
-          phoneNumbers= phoneNumbers+data[i].phoneNumbers[p].phone ;
+          phoneNumbers= phoneNumbers+data[i].phoneNumbers[p].phone+" " ;
           this.setState({ phoneNumbers: phoneNumbers });
           }
         }
           this.setState({ phoneNumbers: phoneNumbers });
         for(var r=0;r<data[i].relatives.length;r++){
           if(data[i].relatives[r].name){
-          relatives= relatives+ data[i].relatives[r].name;
+          relatives= relatives+ data[i].relatives[r].name+" ";
           this.setState({ relatives: relatives });
           }
         }
@@ -122,7 +128,13 @@ class SearchAbove extends Component{
     <div className="row">
 
     <div className="col-md-2 iconPersonUser">
-     <img src={icn_person} className="" alt="logo" />
+    <BrowserView>
+    <div>
+    <div className="circleImg">
+    <img src={icn_person} className="" alt="logo" />
+    </div>
+    </div>
+    </BrowserView>
     </div>
 
     <div className="col-md-10">
