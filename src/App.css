@@ -195,9 +195,29 @@ height: 50px;
 }
 
 
+.circle {
+   background: #004a80;
+   border-radius: 80px;
+   color: #f6bc25;
+   height: 80px;
+   font-weight: bold;
+   width: 80px;
+   display: table;
+   margin: 10px auto;
+   text-align: center;
+   margin-right: 10px;
+}
+.circle p {
+  font-size:32px;
+   vertical-align: middle;
+   display: table-cell;
+}
+
+/*
 .circleBase{
   margin: 10%;
 }
+
 
 .circleBase span {
   font-size:32px;
@@ -211,7 +231,7 @@ height: 50px;
   border-radius: 50%;
   background-color: #004a80;
 }
-
+*/
 /*
 .circleBase span{
   width: 80px;
